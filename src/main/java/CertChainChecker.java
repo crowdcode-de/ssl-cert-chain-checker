@@ -17,7 +17,7 @@ public class CertChainChecker {
         Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 
         if (argv == null || argv.length != 4) {
-            System.out.println("params: <keyStoreTypes> <password> <keyAlias> <pathToCert>");
+            System.out.println("params: <keyStoreType> <password> <keyAlias> <pathToCert>");
             System.out.println("example: JKS foobar example /tmp/mystore.jks");
             System.exit(0);
         }
